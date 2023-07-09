@@ -20,7 +20,7 @@ export default function Contact() {
       transition={{ duration: 1 }}>
       <h2 className='text-amber-500 text-2xl md:text-4xl font-bold mb-4 md:mb-16'>Contact</h2>
 
-      <div className="flex gap-4 my-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
         <a
           href={GITHUB_URL}
           className='rounded-full bg-neutral-200 dark:bg-neutral-800 p-8 cursor-pointer hover:bg-amber-500 hover:dark:bg-amber-600'
