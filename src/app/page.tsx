@@ -8,6 +8,8 @@ import Link from 'next/link'
 import { PiTagChevronFill } from 'react-icons/pi'
 import { motion } from 'framer-motion'
 
+
+
 export default function Home() {
   return (
     <motion.main
