@@ -22,3 +22,9 @@ export const projects: Project[] = [
     url: ""
   }
 ]
+
+export const RESUME_URL = "https://drive.google.com/file/d/1FFMe1N_5DSOUvjiMLZLJeQ3sNxsnbHTc/view?usp=sharing";
+export const GITHUB_URL = "https://github.com/galanteria01";
+export const MEDIUM_URL = "https://shanuu12e.medium.com/";
+export const EMAIL = "shanuu12e@gmail.com";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/shoury-sharma/";

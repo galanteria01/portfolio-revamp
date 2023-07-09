@@ -13,7 +13,7 @@ import { RiMessage3Fill } from 'react-icons/ri'
 export default function Projects() {
   return (
     <motion.main
-      className="relative flex min-h-screen flex-col items-center justify-center px-2 py-4 md:p-24"
+      className="relative flex min-h-screen flex-col items-center justify-center p-4 md:p-24"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -28,12 +28,13 @@ export default function Projects() {
           )
         })}
       </div>
+
       <Link
-        className='mt-4 z-10 flex items-center text-white gap-1 bg-amber-500 py-2 px-4 rounded-full hover:bg-rose-600'
-        href={'/contact'}
+        href={'/timeline'}
+        className='mt-4 z-10 flex items-center text-neutral-900 dark:text-white gap-1 py-2 md:py-4 px-4 md:px-8 rounded-xl bg-neutral-200 dark:bg-neutral-800 hover:bg-amber-500 hover:dark:bg-amber-500'
       >
-        <RiMessage3Fill className='text-2xl' />
-        <p className='text-xl'>Should we connect?</p>
+        <p className='text-xl'>Know the story</p>
+        <RiMessage3Fill className='text-3xl' />
       </Link>
       <DarkModeSwitch />
       <HomeButton />
