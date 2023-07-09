@@ -11,13 +11,10 @@ export default function CirclePointer() {
   return (
     <motion.div
       ref={ref}
-      className="h-8 md:h-32 w-8 md:w-32 z-0 rounded-full bg-amber-500 opacity-75"
+      className="h-8 md:h-32 w-8 md:w-32 z-0 rounded-full bg-amber-500 opacity-50 hidden md:block"
       animate={{ x, y }}
       transition={{
-        type: "spring",
-        damping: 5,
-        stiffness: 50,
-        restDelta: 0.001
+        type: "tween",
       }}
     />
   )

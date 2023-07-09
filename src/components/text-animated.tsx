@@ -1,4 +1,5 @@
 'use client'
+
 import { TypeAnimation } from 'react-type-animation';
 
 export default function TextAnimated() {
@@ -18,7 +19,7 @@ export default function TextAnimated() {
       ]}
       wrapper="span"
       speed={50}
-      className='text xl md:text-2xl'
+      className='text-xl md:text-2xl'
       repeat={Infinity}
     />
   )
