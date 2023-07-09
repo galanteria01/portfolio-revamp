@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <div className='flex h-full'>
-        <div className='block items-center md:flex'>
+        <div className='block items-center md:flex gap-2'>
           <h2 className='text-8xl font-bold text-amber-500'>Hello!</h2>
           <div className=''>
             <h3 className='text-3xl font-semibold'>I am Shoury Sharma</h3>
