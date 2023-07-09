@@ -18,7 +18,7 @@ export default function TextAnimated() {
       ]}
       wrapper="span"
       speed={50}
-      className='text-2xl'
+      className='text xl md:text-2xl'
       repeat={Infinity}
     />
   )

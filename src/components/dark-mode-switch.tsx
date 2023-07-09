@@ -2,7 +2,6 @@ import { useTheme } from 'next-themes';
 import React from 'react'
 import { PiSunFill, PiMoonFill } from 'react-icons/pi'
 
-
 export default function DarkModeSwitch() {
   const { theme, setTheme } = useTheme();
   const toggleMode = () => setTheme(theme === 'dark' ? 'light' : 'dark');
