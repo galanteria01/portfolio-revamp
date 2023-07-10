@@ -23,22 +23,26 @@ export default function Contact() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
         <a
           href={GITHUB_URL}
+          target="_blank"
           className='rounded-full bg-neutral-200 dark:bg-neutral-800 p-8 cursor-pointer hover:bg-amber-500 hover:dark:bg-amber-600'
         >
           <SiGithub className='text-4xl' />
         </a>
         <a
           href={LINKEDIN_URL}
+          target="_blank"
           className='rounded-full bg-neutral-200 dark:bg-neutral-800 p-8 cursor-pointer hover:bg-amber-500 hover:dark:bg-amber-600'
         >
           <SiLinkedin className='text-4xl' />
         </a>
         <a
           href={`mailto:${EMAIL}`}
+          target="_blank"
           className='rounded-full bg-neutral-200 dark:bg-neutral-800 p-8 cursor-pointer hover:bg-amber-500 hover:dark:bg-amber-600'>
           <SiGmail className='text-4xl' />
         </a>
         <a
+          target="_blank"
           href={MEDIUM_URL}
           className='rounded-full bg-neutral-200 dark:bg-neutral-800 p-8 cursor-pointer hover:bg-amber-500 hover:dark:bg-amber-600'>
           <SiMedium className='text-4xl' />
@@ -49,8 +53,8 @@ export default function Contact() {
         href={'/'}
         className='mt-4 z-10 flex items-center text-neutral-900 dark:text-white gap-1 py-2 md:py-4 px-4 md:px-8 rounded-xl bg-neutral-200 dark:bg-neutral-800 hover:bg-amber-500 hover:dark:bg-amber-500'
       >
-        <p className='text-xl'>Go home!</p>
         <MdHomeFilled className='text-3xl' />
+        <p className='text-xl'>Go home!</p>
       </Link>
       <DarkModeSwitch />
       <HomeButton />

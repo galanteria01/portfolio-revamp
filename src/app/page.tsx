@@ -36,8 +36,8 @@ export default function Home() {
         href={'/projects'}
         className='mt-4 z-10 flex items-center text-neutral-900 dark:text-white gap-1 py-2 md:py-4 px-4 md:px-8 rounded-xl bg-neutral-200 dark:bg-neutral-800 hover:bg-amber-500 hover:dark:bg-amber-500'
       >
-        <p className='text-xl'>Let&apos;s Go</p>
         <PiTagChevronFill className='text-3xl' />
+        <p className='text-xl'>Let&apos;s Go</p>
       </Link>
       <DarkModeSwitch />
       <CirclePointer />
