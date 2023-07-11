@@ -3,23 +3,23 @@ import { Project } from "@/types/Project";
 export const projects: Project[] = [
   {
     name: "Socially",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    url: ""
+    description: "As an enthusiastic developer with a keen interest in social media platforms, I undertook a dynamic project called Socially. This project was built using JavaScript, Node.js, and GraphQL to create a robust and interactive social media application.",
+    url: "https://github.com/galanteria01/socially"
   },
   {
     name: "Github Client",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    url: ""
+    description: "In this project, I leveraged the power of React Native, a cross-platform framework, to build a seamless and intuitive mobile application that provides a comprehensive interface for accessing GitHub's features and repositories.",
+    url: "https://github.com/galanteria01/github-client"
   },
   {
     name: "Sharecipe",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    url: ""
+    description: "In this project, I harnessed the power of React Native to develop a mobile application that enables users to discover, create, and share recipes with a vibrant community of cooking enthusiasts. By leveraging the platform's cross-platform capabilities.",
+    url: "https://github.com/galanteria01/sharecipe"
   },
   {
     name: "Special hooks",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    url: ""
+    description: "The 'Special Hooks' npm package encapsulates a set of reusable hooks designed to simplify complex tasks and improve the efficiency of React projects. These hooks encompass a range of functionalities such as form handling, data fetching, animation controls, and state management, among others.",
+    url: "https://github.com/galanteria01/special-hooks"
   }
 ]
 
