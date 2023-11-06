@@ -31,8 +31,8 @@ export default function Home() {
         <TextAnimated />
       </div>
       <Link
-        href={'/projects'}
-        shallow
+        href={'projects'}
+        passHref
         className='mt-4 z-10 flex items-center text-neutral-900 dark:text-white gap-1 py-2 md:py-4 px-4 md:px-8 rounded-xl bg-neutral-200 dark:bg-neutral-800 hover:bg-amber-500 hover:dark:bg-amber-500'
       >
         <PiTagChevronFill className='text-3xl' />

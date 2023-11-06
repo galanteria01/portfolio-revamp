@@ -12,13 +12,13 @@ export const projects: Project[] = [
     url: "https://github.com/galanteria01/github-client"
   },
   {
-    name: "Sharecipe",
-    description: "In this project, I harnessed the power of React Native to develop a mobile application that enables users to discover, create, and share recipes with a vibrant community of cooking enthusiasts. By leveraging the platform's cross-platform capabilities.",
-    url: "https://github.com/galanteria01/sharecipe"
+    name: "Generative AI Notes",
+    description: "In this project, I harnessed the power of OpenAI apis to generate thumbnails images for notes and also to generate remaining content for a note. Uses markdown to show different formats of text.",
+    url: "https://ai-noter.vercel.app/"
   },
   {
     name: "Special hooks",
-    description: "The 'Special Hooks' npm package encapsulates a set of reusable hooks designed to simplify complex tasks and improve the efficiency of React projects. These hooks encompass a range of functionalities such as form handling, data fetching, animation controls, and state management, among others.",
+    description: "The 'Special Hooks' npm package encapsulates a set of reusable hooks designed to simplify complex tasks and improve the efficiency of React projects and libraries. ",
     url: "https://github.com/galanteria01/special-hooks"
   }
 ]
