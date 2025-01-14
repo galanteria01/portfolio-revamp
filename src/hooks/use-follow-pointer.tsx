@@ -1,7 +1,13 @@
 import { useState, RefObject, useEffect } from "react";
+import { useMotionValue, useSpring, frame } from "motion/react";
+
+const spring = { damping: 3, stiffness: 50, restDelta: 0.001 };
 
 export function useFollowPointer(ref: RefObject<HTMLElement>) {
-  const [point, setPoint] = useState({ x: 0, y: 0 });
+  const xPoint = useMotionValue(0);
+  const yPoint = useMotionValue(0);
+  const x = useSpring(xPoint, spring);
+  const y = useSpring(yPoint, spring);
 
   useEffect(() => {
     if (!ref.current) return;
@@ -9,9 +15,10 @@ export function useFollowPointer(ref: RefObject<HTMLElement>) {
     const handlePointerMove = ({ clientX, clientY }: MouseEvent) => {
       const element = ref.current!;
 
-      const x = clientX - element.offsetLeft - element.offsetWidth / 2;
-      const y = clientY - element.offsetTop - element.offsetHeight / 2;
-      setPoint({ x, y });
+      frame.read(() => {
+        xPoint.set(clientX - element.offsetLeft - element.offsetWidth / 2);
+        yPoint.set(clientY - element.offsetTop - element.offsetHeight / 2);
+      });
     };
 
     window.addEventListener("pointermove", handlePointerMove);
@@ -19,5 +26,5 @@ export function useFollowPointer(ref: RefObject<HTMLElement>) {
     return () => window.removeEventListener("pointermove", handlePointerMove);
   }, []);
 
-  return point;
+  return { x, y };
 }
